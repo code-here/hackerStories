@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vw;
+  padding: 20px;
+  background: #83a4d4;
+  background-image: linear-gradient(to left, #b6fbff, #83a4d4);
+  color: #171212;
+}
+
+.headlinePrimary {
+  margin-top: 0;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.item {
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.item > span {
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item > span > a {
+  color: inherit;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #171212;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.button:hover {
+  background: #171212;
+  color: #ffffff;
+}
+
+.button:hover svg > g {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.active {
+  background: #171212;
+  color: #ffffff;
+}
+
+.buttonSmall {
+  padding: 8px;
+}
+
+.buttonLarge {
+  padding: 12px;
+}
+
+.searchForm {
+  padding: 10px 0 20px 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.label {
+  border-top: 1px solid #171212;
+  border-left: 1px solid #171212;
+  padding-left: 5px;
+  font-size: 24px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #171212;
+  background-color: transparent;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/*styling scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
