@@ -139,7 +139,7 @@ const App = () => {
 
   return (
     <div className={style.container}>
-      <h1 className={style.headlinePrimary}>My hacker stories!!!</h1>
+      <h1 className={style.headlinePrimary}>My_hacker_stories</h1>
       <SearchForm
         searchTerm={searchTerm}
         onSearchInput={handleSearchInput}

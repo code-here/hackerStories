@@ -7,12 +7,13 @@ const Pages = ({ pages, url, handlePaginate, activeButton }) => {
       links.push(`${url}&page=${i}`);
     }
   return (
-    <div style={{ display: 'flex', overflowX: 'scroll', paddingBottom: '5px'}}>
+    <div style={{ display: 'flex', gap: '3px', overflowX: 'scroll', paddingBottom: '5px'}}>
       <span style={{ padding: '5px'}}>Go To: </span>
       {links.map((link, index) => (
         <button
           type="button"
           key={index + 1}
+          style={{ borderRadius: '50%'}}
           onClick={() => handlePaginate(link, index+1)}
           className={`${style.button} ${style.buttonSmall} ${activeButton.pageno === index+1 ? style.active : ''}`}
         >
